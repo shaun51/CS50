@@ -10,18 +10,15 @@ int main(void)
 {
 	printf("Height: "); // get user input and set it to height input
 	int height = GetInt();
-	
 	int i, j, k;
 	for(i = 1 ; i < height; i++)
 	{
-		// create n-1 spaces
-		for(k = (height - 2); k > (i-1); k--)
-		{
+		for(k = (height - 2); k > (i-1); k--) // create n-1 spaces
+	        {
 			printf("%c", ' ');		
 		}
-		// create n+1 hash tags
-		for(j = 0; j < (i+1); j++)
-		{
+ 		for(j = 0; j < (i+1); j++) // create n+1 hash tags
+	        {
 			printf("#");
 		}
 		printf("\n");
